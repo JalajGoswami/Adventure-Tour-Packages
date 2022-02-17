@@ -1,0 +1,25 @@
+.toursContainer{
+    display: grid;
+    grid-template-columns: 100%;
+}
+@media screen and (min-width:768px) {
+    .toursContainer{
+        grid-template-columns: 30% 70%;
+        margin: 0% 5%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+    .toursContainer{
+        margin: 0%;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1050px) {
+    .toursContainer{
+        margin: 0% 2%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:800px) {
+    .toursContainer{
+        grid-template-columns: 25% 75%;
+    }
+}

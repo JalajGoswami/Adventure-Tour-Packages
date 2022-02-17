@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+    sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

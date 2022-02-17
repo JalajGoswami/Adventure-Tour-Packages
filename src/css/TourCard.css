@@ -1,0 +1,204 @@
+.tourCard{
+    margin: 2.5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 0.5px solid #aaa;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px grey;
+}
+.tourCard>img{
+    width: 100%;
+    grid-column: 1/span 2;
+}
+.alldetails{
+    grid-column: 1/span 2;
+}
+.nameContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transform: translateY(-1.5rem);
+    margin-bottom: -1.5rem;
+}
+.nameContainer>.details{
+    color: white;
+    z-index: 2;
+    font-size: 0.9rem;
+    padding: 0% 4%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.details>div{flex-grow: 1;}
+.nameContainer h3{
+    box-shadow: 0px -40px 1rem rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    padding: 0% 4%;
+}
+.nameContainer svg{
+    transform: translateY(2px);
+    padding: 0% 1%;
+}
+.benefits{
+    display: flex;
+    gap: 0.3rem;
+    padding: 0% 2.5%;
+    flex-wrap: wrap;
+}
+.benefits>span{
+    background-color: rgb(235, 235, 235);
+    border: 0.2px solid #ccc;
+    min-width: 3.5rem;
+    border-radius: 0.2rem;
+    padding: 1%;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding-top: 1%;
+}
+.benefits svg{
+    font-size: 1.3rem;
+}
+.features{
+    width: 100%;
+    white-space: nowrap;
+    margin: 1% 0%;
+    padding: 1.5% 0%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 5%;
+    border-bottom: 0.4px solid #aaa;
+}
+.features>span{
+    margin: 0% 3%;
+    border: 0.5px solid rgb(161, 192, 161);
+    font-size: 0.9rem;
+    padding: 0% 2.5%;
+    border-radius: 1rem;
+    color: rgb(0, 89, 124);
+}
+.pricing{
+    grid-column: 1/span 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.price{
+    font-size: 0.8rem;
+    color: #555;
+    font-weight: 600;
+}
+.price h3{
+    margin: 1%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255, 24, 24);
+}
+.rating{
+    grid-column: 2;
+}
+.rating>.star{
+    color: rgb(235, 178, 33);
+    font-size: 1.3rem;
+}
+.star span{
+    font-size: 0.9rem;
+    color: white;
+    background-color: rgb(235, 178, 33);
+    padding: 0.5% 2%;
+    border-radius: 0.2rem;
+}
+.star svg{
+    transform: translateY(4px);
+}
+.rating>.rev{
+    font-size: 0.8rem;
+    color: #555;
+}
+.viewdetails{
+    grid-column: 1/span 2;
+    font-weight: 600;
+    padding: 1.5% 0%;
+    color: rgb(231, 231, 231);
+    background-color: rgb(50, 131, 50);
+    margin-top: 0.2rem;
+}
+@media screen and (min-width:768px) {
+    .tourCard{
+        grid-template-columns: 30% 50% 20%;
+        border: 0;
+    }
+    .tourCard>img{
+        grid-column: 1;
+        height: 100%;
+        object-fit: cover;
+    }
+    .alldetails{
+        grid-column: 2;
+    }
+    .pricing{
+        grid-column: 3;
+    }
+    .nameContainer{
+        flex-direction: column-reverse;
+        transform: translateY(0);
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 1%;
+        border-bottom: 0.4px solid rgb(202, 202, 202);
+    }
+    .nameContainer>.details{
+        color: #888;
+        font-weight: 600;
+    }
+    .nameContainer h3{
+        box-shadow: none;
+        margin-bottom: 0.4rem;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .benefits{
+        margin-top: 0.8rem;
+    }
+    .benefits svg{
+        font-size: 1.8rem;
+    }
+    .features{
+        padding-bottom: 1%;
+        overflow: unset;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 0;
+        margin: 2%;
+    }
+    .features span{
+        margin: 1% 1%;
+        font-size: 0.8rem;
+    }
+    .pricing{
+        border-left: 0.5px solid rgb(202, 202, 202);
+    }
+    .price{
+        grid-column: 1/span 2;
+        grid-row: 2;
+    }
+    .rating{
+        grid-column: 1/span 2;
+        grid-row: 1;
+    }
+    .viewdetails{
+        background-color: unset;
+    }
+    .viewdetails div{
+        width: 70%;
+        margin: auto;
+        font-size: 0.9rem;
+        padding: 2% 1%;
+        border-radius: 1rem;
+        background-color: rgb(50, 131, 50);
+    }
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+    .benefits svg{
+        font-size: 1.5rem;
+    }
+}

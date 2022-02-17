@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Sky Diving",
+        "image":"/res/Sky Diving.jpg",
+        "tours":[
+            {
+                "name":"Scuba Diving in Grande Island, Goa",
+                "duration":"8 hour",
+                "location":"Goa,India",
+                "image":"/res/Scuba Diving.jpg",
+                "benefits":["Snacks","Transport","Photo/Video","Activities"],
+                "features":["Long Tail Boat Ride","Underwater Photo & Video"],
+                "reviews":36,
+                "rating":3.7,
+                "price":1799
+            },
+            {
+                "name":"Bungee Jumping in Goa",
+                "duration":"30 min",
+                "location":"Goa,India",
+                "image":"/res/Bungee Jumping.jpg",
+                "benefits":["Photo/Video","Activities"],
+                "features":["61 meter height","Jump Photo & Video"],
+                "reviews":32,
+                "rating":4.7,
+                "price":2800
+            }
+        ]
+    }
+]

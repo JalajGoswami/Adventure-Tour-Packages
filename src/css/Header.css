@@ -1,0 +1,35 @@
+.header{
+    height: 22rem;
+    position: relative;
+    width: 100%;
+}
+.header>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+.header>.title{
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 50%;
+    font-weight: 600;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    text-shadow: 1px 2px 5px rgb(39, 39, 39);
+}
+@media screen and (min-width:768px) {
+    .header{height: 25rem;}
+    .header>img{
+        object-position: top right;
+    }
+    .header>.title{
+        font-size: 2.5rem;
+        font-weight: 700;
+        left: 25%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+    .header>.title{left: 35%;}
+}
